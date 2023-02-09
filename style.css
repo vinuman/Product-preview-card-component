@@ -1,0 +1,217 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: hsl(30, 38%, 92%);
+}
+
+.container{
+   display: flex;
+   /* margin-left: auto;
+   margin-right: auto; */
+   
+   border-radius: 10px;
+   max-width:50%;
+   margin: auto;
+   margin-top: 50px;
+}
+
+.container> .left{
+    width:50%;
+}
+.container> .right{
+    width:50%;
+    padding:20px 10px 20px 40px;
+    padding-top: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    background-color: whitesmoke;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.perfume{
+    font-family: 'Montserrat', sans-serif;
+    color:  hsl(228, 12%, 48%);
+    letter-spacing: 0.5rem;
+    font-size: 0.8rem;
+    margin-top: 10px;
+    
+}
+
+.right > h1{
+    
+    margin-top: 15px;
+    font-family: 'Fraunces', serif;
+    color:#333;
+    margin-bottom: 20px;
+}
+
+.right > .desc{
+    
+    margin-bottom: 20px;
+    font-family: 'Montserrat', sans-serif;
+    color:  hsl(228, 12%, 48%);
+    letter-spacing: normal;
+    line-height: 1.5rem;
+}
+
+.prices{
+
+    display: flex;
+    width: 100%;
+    
+    margin-left:0;
+}
+
+.prices > h1{
+    font-family: 'Fraunces', serif;
+    color: #4b7f52;
+    font-size: 2.4rem;
+}
+.prices > p{
+    font-family: 'Fraunces', serif;
+    
+    margin-left: 25px;
+    padding-top: 15px;
+    color:  hsl(228, 12%, 48%);
+    font-size: 0.9rem;
+    font-weight:lighter;
+    text-decoration: line-through;
+}
+
+button {
+    font-family: 'Montserrat', sans-serif;
+    margin-top: 30px;
+    width: 90%;
+    height: 50px;
+    border: none;
+    border-radius: 5px;
+    background-color: #4b7f52;
+    color: hsl(0, 0%, 100%);
+    font-size: 1rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  button:hover {
+    background-color: #003e1f;
+  }
+  
+  .material-symbols-outlined {
+    color: hsl(0, 0%, 100%);
+    padding-right: 10px;
+  }
+  
+  
+  
+ 
+
+img{
+    
+    width:100%;
+    height: 100%;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+@media screen and (max-width:1200px){
+
+    *{
+        margin:0px;
+        padding:0px;
+        box-sizing: border-box;
+    }
+
+    body{
+       
+        overflow-x: hidden;
+    }
+
+    
+    .container{
+
+       margin: auto 0;
+       margin-left: 5vw;
+       margin-top: 20px;
+       margin-bottom: 20px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .container> .left{
+          
+        width:90vw;
+        height:40vh;
+    }
+
+    .container> .right{
+        width:90vw;
+        height:55vh;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+    }
+
+    img{
+        border-top-right-radius: 10px;
+        border-bottom-left-radius: 0px;
+        border-bottom-right-radius: 0px;
+    }
+
+    .perfume{
+        margin-top: -15px;
+    }
+
+    .right > h1{
+    
+        margin-top: 10px;
+        font-family: 'Fraunces', serif;
+        color:#333;
+        
+        font-size: 1.5rem;
+    }
+    .right > .desc{
+    
+        margin-top:-10px;
+        font-family: 'Montserrat', sans-serif;
+        color:  hsl(228, 12%, 48%);
+        letter-spacing: normal;
+        line-height: 1rem;
+    }
+    .prices > h1{
+        font-family: 'Fraunces', serif;
+        color: #4b7f52;
+        font-size: 1.8rem;
+    }
+    .prices > p{
+        font-family: 'Fraunces', serif;
+        margin-bottom: 10px;
+        margin-left: 20px;
+       
+        color:  hsl(228, 12%, 48%);
+        font-size: 0.9rem;
+        font-weight:lighter;
+        text-decoration: line-through;
+    }
+    button {
+        font-family: 'Montserrat', sans-serif;
+        margin-top: 10px;
+        width: 90%;
+        height: 50px;
+        border: none;
+        border-radius: 5px;
+        background-color: #4b7f52;
+        color: hsl(0, 0%, 100%);
+        font-size: 1rem;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+}
